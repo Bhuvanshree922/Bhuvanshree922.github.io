@@ -52,7 +52,7 @@
     }
     .logo-title { display: flex; align-items: center; gap: 10px; }
     .logo-title img {
-      height: 44px;
+      height: 60px;   /* bigger on desktop */
       width: auto;
       object-fit: contain;
     }
@@ -75,8 +75,10 @@
       animation: fadeUp 1.2s ease;
     }
     .hero img {
-      width: 160px; margin-bottom: 32px;
-    }
+        width: 220px;   /* bigger centerpiece */
+        max-width: 80%; /* prevents overflow on small screens */
+        margin-bottom: 40px;
+      }
     .hero h2 {
       font-size: 3rem;
       font-weight: 700;
